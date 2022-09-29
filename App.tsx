@@ -10,6 +10,8 @@
 
 import React, {type PropsWithChildren} from 'react';
 import {
+  Button,
+  Image,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -27,6 +29,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+const imgUrl = 'https://miro.medium.com/max/1400/1*CqwmNh7ECSLGO4Zz_gL9Vw.png';
 const Section: React.FC<
   PropsWithChildren<{
     title: string;
@@ -94,6 +97,50 @@ const App = () => {
           <View style={{flex: 1, marginBottom: 10}}>
             <Text testID="world_button" style={{justifyContent: 'center'}}>World!!!</Text>
           </View>
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          <Button testID='findMe' title='Here I am' />
+          <Image
+            source={{
+              uri: imgUrl,
+            }}
+            style={{justifyContent: 'center', width: 200, height: 200 }}
+          />
+          
         </View>
       </ScrollView>
     </SafeAreaView>
