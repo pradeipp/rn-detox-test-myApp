@@ -77,14 +77,23 @@ const App = () => {
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
+          }}
+          testID="welcome">
           <View
             style={{
               backgroundColor: isDarkMode ? Colors.black : Colors.white,
             }}
           />
           <Text testID="hello">Hello, Detox!</Text>
-          <Section title="Step One"></Section>
+          <Section title="Test App">
+            Test app for reproducing detox issues.
+          </Section>
+          <View style={{flex: 1, marginBottom: 10}}>
+            <Text testID="hello_button" style={{justifyContent: 'center'}}>Hello!!!</Text>
+          </View>
+          <View style={{flex: 1, marginBottom: 10}}>
+            <Text testID="world_button" style={{justifyContent: 'center'}}>World!!!</Text>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
