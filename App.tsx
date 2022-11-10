@@ -75,7 +75,8 @@ const App = () => {
       />
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
+        style={backgroundStyle}
+        testID='scrollView'>
         <Header />
         <View
           style={{
