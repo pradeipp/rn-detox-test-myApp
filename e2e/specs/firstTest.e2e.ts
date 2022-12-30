@@ -1,7 +1,7 @@
-import { expect } from 'detox'
-import { MainPage } from '../pages/PageClass';
+import {expect} from 'detox';
+import {HomePage} from '../pages/HomePage';
 
-describe('Example', () => {
+xdescribe('Example', () => {
   beforeAll(async () => {
     await device.launchApp();
   });
@@ -24,11 +24,11 @@ describe('Example', () => {
     await expect(element(by.text('World!!!'))).toBeVisible();
   });
 
-  it('should scroll down until it finds a button', async () => {
-    await MainPage.helloText.tap();
-    await waitFor(MainPage.findMeButton)
-          .toBeVisible()
-          .whileElement(MainPage.scrollView)
-          .scroll(50, 'down');
+  xit('should scroll down until it finds a button', async () => {
+    await HomePage.helloText.tap();
+    await waitFor(HomePage.findMeButton)
+      .toBeVisible()
+      .whileElement(HomePage.scrollView)
+      .scroll(50, 'down');
   });
 });
